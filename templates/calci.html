@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'calci.css' %}"
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label>Value1:</label>
+        <input type="number" name="num1">
+        <br>
+        <br>
+        <label>Value2:</label>
+        <input type="number" name="num2">
+        <br>
+        <br>
+        <label>Operator:</label>
+        <input type="text" name="oper">
+        <br>
+        <br>
+        <button type="submit">Calculate</button>
+        <div id="answer">
+            {% if result %}
+            <p>The Result is {{result}}</p>
+            {% endif %}
+        </div>
+    </form>
+    </div>
+</body>
+</html>

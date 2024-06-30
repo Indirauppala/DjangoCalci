@@ -1,0 +1,30 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/calculator-notepad-flat-lay_23-2148475332.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    margin: 0;
+}
+h1{
+    padding-top: 1%;
+    padding-left: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    margin: 10%;
+    margin-left: 18%;
+    padding: 3%;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+
+}
+button{
+    background-color: black;
+    color: white;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
